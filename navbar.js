@@ -1,4 +1,4 @@
-function navbarHamburguerOnClick() {
+let navbarHamburguerOnClick = function navbarHamburguerOnClick() {
     let hamburguer = document.getElementById("cabecalho__hamburguer");
 
     if(hamburguer.value == "active") {
@@ -10,7 +10,7 @@ function navbarHamburguerOnClick() {
     }
 }
 
-function mostrarNavbar() {
+let mostrarNavbar = function mostrarNavbar() {
     document.getElementById("cabecalho__hamburguer").classList.remove("fa-rotate-180");
     document.getElementById("cabecalho__hamburguer").classList.add("fa-rotate-90");
 
@@ -24,7 +24,7 @@ function mostrarNavbar() {
     )
 }
 
-function esconderNavbar() {
+let esconderNavbar = function esconderNavbar() {
     document.getElementById("cabecalho__hamburguer").classList.remove("fa-rotate-90");
     document.getElementById("cabecalho__hamburguer").classList.add("fa-rotate-180");
 

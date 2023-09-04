@@ -1,0 +1,116 @@
+.secao-experiencia {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-experiencia__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.secao-experiencia__conteudo {
+    height: 80%;
+    flex-direction: column;
+}
+
+.secao-experiencia__descricao {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.secao-experiencia__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.secao-experiencia__lista-item {
+    height: auto;
+    width: 80%;
+}
+
+.secao-experiencia__data {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(1rem, 1.4rem, 1.4vw);
+}
+
+.secao-experiencia__icone {
+    color: #F5B63F;
+    margin-right: 0.5rem;
+}
+
+.secao-experiencia__subtitulo {
+    font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.secao-experiencia__paragrafo {
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+    text-align: start;
+}
+
+.secao-experiencia__botao {
+    box-sizing: border-box;
+    padding-inline: 4.5rem;
+    padding-block: 0.9rem;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+}
+
+.secao-experiencia__botao:hover {
+    background-color: #f1ab28;
+    transition: 0.2s;
+    padding-inline: 5.4rem;
+}
+
+.secao-experiencia__botao:hover > .secao-experiencia__label {
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.secao-experiencia__grid-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.secao-experiencia__grid {
+    position: relative;
+    top: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+    height: 80%;
+    gap: 2rem;
+}
+
+.secao-experiencia__grid-item {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border: 0.2rem solid #CDCDCD;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+    text-transform: uppercase;
+}
+
+.grid-item__numero {
+    font-size: clamp(2rem, 4.5rem, 4.5vw);
+    font-weight: bold;
+    color: #F5B63F;
+}
+
+.grid-item__texto {
+    text-transform: uppercase;
+    text-align: center;
+}

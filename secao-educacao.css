@@ -1,0 +1,85 @@
+.secao-educacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-educacao__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.secao-educacao__conteudo {
+    height: 80%;
+    flex-direction: row;
+}
+
+
+.secao-educacao__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 28%;
+    height: 100%;
+}
+
+.secao-educacao__lista-titulo {
+    width: 100%;
+    padding-block: 1rem;
+    background-color: #2A2A2A;
+    color: #F5B63F;
+    font-size: clamp(1rem, 1.3rem, 1.3vw);
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 2rem;
+}
+
+.secao-educacao__lista-item {
+    height: auto;
+}
+
+.secao-educacao__data {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(1rem, 1.4rem, 1.4vw);
+}
+
+.secao-educacao__icone {
+    color: #F5B63F;
+    margin-right: 0.5rem;
+}
+
+.secao-educacao__subtitulo {
+    font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.secao-educacao__paragrafo {
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+    text-align: start;
+}
+
+
+.secao-educacao__botao {
+    box-sizing: border-box;
+    padding-inline: 4.5rem;
+    padding-block: 0.9rem;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.secao-educacao__botao:hover {
+    background-color: #f1ab28;
+    transition: 0.2s;
+    padding-inline: 5.4rem;
+}
+
+.secao-educacao__botao:hover > .secao-educacao__label {
+    color: whitesmoke;
+    transition: 0.2s;
+}
+

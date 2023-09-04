@@ -1,0 +1,141 @@
+.secao-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-contato__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+    /* background-color: red; */
+}
+
+.secao-contato__conteudo {
+    height: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: greenyellow; */
+}
+
+.secao-contato__informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.secao-contato__lista-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 1.5rem, 1.5vw);
+}
+
+.secao-contato__contato {
+    display: flex;
+    flex-direction: row;
+}
+
+.contato__icone {
+    display: flex;
+    font-size: clamp(1rem, 2rem, 2vw);
+    background-color: #F5B63F;
+    width: clamp(1.5rem, 3rem, 3vw);
+    height: clamp(1.5rem, 3rem, 3vw);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contato__texto {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+    font-weight: lighter;
+    padding-left: 0.5rem;
+}
+
+.secao-contato__contato > a {
+    text-transform: none;
+    color: black;
+}
+
+.contato__texto > a {
+    text-transform: none;
+    color: white;
+    font-weight: bold;
+}
+
+.secao-contato__lista-redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.secao-contato__rede-social {
+    display: flex;
+    font-size: clamp(1rem, 2rem, 2vw);
+    background-color: #2B2A2A;
+    color: white;
+    width: clamp(1.5rem, 3rem, 3vw);
+    height: clamp(1.5rem, 3rem, 3vw);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.secao-contato__rede-social:hover {
+    transition: 0.2s;
+    background-color: #F5B63F;
+    color: black;
+}
+
+.secao-contato__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.formulario__lista-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario__item {
+    outline: none;
+    border: 0.15rem solid #CDCDCD;
+    border-radius: 10px;
+    background-color: #2B2A2A;
+    font-size: clamp(1rem, 1.3rem, 1.3vw);
+    padding: 0.8rem 0.8rem;
+}
+
+.formulario__item:hover, :focus {
+    border-color: #F5B63F;
+    transition: 0.1s;
+}
+
+.formulario__mensagem {
+    height: 12rem;
+}
+
+.formulario__botao {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+    text-align: center;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+.formulario__botao:hover {
+    background-color: #f1ab28;
+    color: whitesmoke;
+    transition: 0.2s;
+    padding-inline: 3rem;
+}

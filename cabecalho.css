@@ -1,0 +1,67 @@
+.cabecalho__botao {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2A2A;
+    color: white;
+    border-radius: 6vh;
+    border: none;
+    min-width: 6vh;
+    height: 6vh;
+    cursor: pointer;
+    font-size: clamp(1rem, 1.6rem, 1.6vw);
+    transition: 0.2s;
+}
+
+.cabecalho__botao:hover {
+    display: flex;
+    background-color: #F5B63F;
+    padding-inline: 2rem;
+    gap: 0.5rem;
+}
+
+.cabecalho__botao:hover > .cabecalho__label {
+    font-size: clamp(1rem, 1.6rem, 1.6vw);
+    transition: 0.4s;
+}
+
+.cabecalho__hamburguer {
+    margin-left: 6vh;
+    font-size: clamp(2rem, 3rem, 3vw);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cabecalho__hamburguer:hover {
+    background-color: transparent;
+}
+
+.cabecalho__hamburguer:hover > .cabecalho__icone {
+    transition: all 0.2s;
+    color: #F5B63F;
+}
+
+.cabecalho__circulo {
+    color: #2B2A2A;
+}
+
+.cabecalho__icone {
+    color: white;
+    font-size: inherit;
+}
+
+.cabecalho__label {
+    text-transform: uppercase;
+    font-size: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navbar__item {
+    position: relative;
+    visibility: hidden;
+    transition: 0.4s;
+}

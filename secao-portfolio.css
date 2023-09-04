@@ -1,0 +1,64 @@
+.secao-portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-portfolio__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+    width: 90%;
+    height: 80%;
+    top: 15%;
+    left: 10%;
+}
+
+.secao-portfolio__conteudo {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-portfolio__cabecalho {
+    position: relative;
+    align-self: flex-end;
+}
+
+.secao-portfolio__paginas {
+    display: flex;
+    flex-direction: row;
+    width: 300%;
+}
+
+.secao-portfolio__pagina {
+    position: relative;
+}
+
+.secao-portfolio__grid {
+    width: 100%;
+    box-sizing: border-box;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
+    align-self: center;
+    padding-block: 1rem;
+}
+
+.secao-portfolio__botao {
+    position: relative;
+    box-sizing: border-box;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    border-radius: 10px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+}
+
+.secao-portfolio__botao:hover {
+    background-color: #f1ab28;
+    transition: 0.2s;
+    padding-inline: 3.6rem;
+}
+
+.secao-portfolio__botao:hover > .secao-portfolio__label {
+    color: whitesmoke;
+    transition: 0.2s;
+}

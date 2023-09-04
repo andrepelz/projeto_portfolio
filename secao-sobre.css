@@ -1,0 +1,66 @@
+.secao-sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-sobre__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+    width: 90%;
+    height: 80%;
+    top: 15%;
+    left: 10%;
+}
+
+.secao-sobre__conteudo {
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secao-sobre__informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao-sobre__lista {
+    text-transform: uppercase;
+}
+
+.secao-sobre__subtitulo {
+    color: #C4C4C4;
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+}
+
+.secao-sobre__topico {
+    font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+    margin-bottom: 2.5vh;
+}
+
+.secao-sobre__foto {
+    width: 50%;
+    align-self: flex-start;
+    display: flex;
+    margin-left: 5vw;
+}
+
+.secao-sobre__botao {
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+}
+
+.secao-sobre__botao:hover {
+    padding-inline: 3.6rem;
+    background-color: #f1ab28;
+    transition: 0.2s;
+}
+
+.secao-sobre__botao:hover > .secao-sobre__label {
+    color: whitesmoke;
+    transition: 0.2s;
+}

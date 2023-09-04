@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="secao-educacao.css" />
     <link rel="stylesheet" href="secao-contato.css" />
     <link rel="stylesheet" href="cabecalho.css" />
-    <script type="text/javascript" src="navbar.js">
-      
-    </script>
+    <script type="text/javascript" src="navbar.js"></script>
+    <script type="text/javascript" src="portfolio_carrosel.js"></script>
   </head>
 
   <body>
@@ -175,78 +174,29 @@
         <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
           <ul id="secao-portfolio__cabecalho" class="cabecalho secao-portfolio__cabecalho">
             <li>
-              <a id="cabecalho__sites" class="cabecalho__botao">
+              <button id="cabecalho__sites" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(0)">
                 <i class="fa-solid fa-code cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Sites</p>
-              </a>
+              </button>
             </li>
 
             <li>
-              <a id="cabecalho__palette" class="cabecalho__botao">
+              <button id="cabecalho__palette" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(1)">
                 <i class="fa-solid fa-palette cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Designs</p>
-              </a>
+              </button>
             </li>
 
             <li>
-              <a id="cabecalho__camera" class="cabecalho__botao">
+              <button id="cabecalho__camera" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(2)">
                 <i class="fa-solid fa-camera cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Fotos</p>
-              </a>
+              </button>
             </li>
           </ul>
 
-          <!-- <ul id="secao-portfolio__grid" class="secao__grid secao-portfolio__grid">
-            <li>
-              <img 
-                id="secao-portfolio__foto-1"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-3.jpg"
-              >
-            </li>
-
-            <li>
-                <img 
-                id="secao-portfolio__foto-2"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-2.jpg"
-              >
-            </li>
-
-            <li>
-                <img 
-                id="secao-portfolio__foto-3"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-1.jpg"
-              >
-            </li>
-
-            <li>
-              <img 
-                id="secao-portfolio__foto-4"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-4.jpg"
-              >
-            </li>
-
-            <li>
-                <img 
-                id="secao-portfolio__foto-5"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-6.jpg"
-              >
-            </li>
-
-            <li>
-              <img 
-                id="secao-portfolio__foto-6"
-                class="secao-portfolio__foto secao__grid-item secao-portfolio__grid-item"
-                src="images/portfolio-website-7.jpg"
-              >
-            </li>
-          </ul> -->
-
-          <ul class="secao-portfolio__paginas">
+          <ul id="secao-portfolio__paginas" class="secao-portfolio__paginas">
+            <param id="numPaginas" name="porfolio-paginas__num-paginas" value=3 />
             <li class="secao-portfolio__pagina">
               <ul id="secao-portfolio__grid" class="secao__grid secao-portfolio__grid">
                 <li>
@@ -975,7 +925,6 @@
 
 <!--
   CORREÇÕES:
-    -- fazer telas portfolio
     -- snackbar formulario (resposta confirmando envio)
     -- usar tag figure para imagens
     -- figma mobile
@@ -986,4 +935,5 @@
     -- aumentar tempo transicao => FEITO
     -- header tag para nav => FEITO
     -- alinhamento portfolio => FEITO
+    -- fazer telas portfolio => FEITO
 -->

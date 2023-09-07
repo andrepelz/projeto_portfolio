@@ -120,9 +120,10 @@
 
 .formulario__mensagem {
     height: 12rem;
+    resize: none;
 }
 
-.formulario__botao {
+.formulario__botao--enabled {
     padding-block: 1rem;
     padding-inline: 2rem;
     margin-top: 0.5rem;
@@ -133,9 +134,36 @@
     align-self: flex-end;
 }
 
-.formulario__botao:hover {
+.formulario__botao--enabled:hover {
     background-color: #f1ab28;
     color: whitesmoke;
     transition: 0.2s;
     padding-inline: 3rem;
+}
+
+.formulario__botao--disabled {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+    text-align: center;
+    text-transform: uppercase;
+    align-self: flex-end;
+    background-color: #CDCDCD;
+}
+
+.formulario__toast {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    background-color: #F5B63F;
+    color: white;
+    z-index: 1;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    filter: drop-shadow(0.3rem 0.3rem 1rem rgba(245, 182, 63, 0.4));
 }

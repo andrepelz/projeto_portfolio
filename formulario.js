@@ -14,4 +14,14 @@ export default function enviarFormulario(e) {
         input_assunto: assunto.value,
         input_mensagem: mensagem.value
     });
+
+    const botao = document.getElementById("formulario__botao");
+
+    console.log(botao.classList);
+
+    botao.disabled = true;
+    botao.classList.remove("formulario__botao--enabled");
+    botao.classList.add("formulario__botao--disabled");
+
+    console.log(botao.classList);
 }

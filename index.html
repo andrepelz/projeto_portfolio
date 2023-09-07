@@ -11,6 +11,15 @@
       crossorigin="anonymous"
     ></script>
 
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("Ka75P71Rut3kLgQSh");
+      })();
+    </script>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="secao-apresentacao.css" />
     <link rel="stylesheet" href="secao-sobre.css" />
@@ -24,6 +33,7 @@
     <script type="module" src="main.js"></script>
     <script type="module" src="navbar.js"></script>
     <script type="module" src="portfolio_carrosel.js"></script>
+    <script type="module" src="formulario.js"></script>
   </head>
 
   <body>
@@ -916,21 +926,24 @@
               </a>
             </ul>
           </address>
+
+          <!-- action="https://formsubmit.co/andre.valim@edu.univali.br" -->
+          <!-- method="POST" -->
           
           <form
-            action="https://formsubmit.co/andre.valim@edu.univali.br"
-            method="POST"
+            id="secao-contato__formulario"
             class="secao-contato__formulario"
           >
             <div class="formulario__lista-itens">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next" value="">
 
-              <input type="text" name="Nome" placeholder="NOME" required class="texto formulario__item">
-              <input type="email" name="Email" placeholder="EMAIL" required class="texto formulario__item">
-              <input type="tel" name="Telefone" placeholder="TELEFONE" required class="texto formulario__item">
-              <input type="text" name="Assunto" placeholder="ASSUNTO" required class="texto formulario__item">
+              <input id="formulario__nome" type="text" name="Nome" placeholder="NOME" required class="texto formulario__item">
+              <input id="formulario__email" type="email" name="Email" placeholder="EMAIL" required class="texto formulario__item">
+              <input id="formulario__telefone" type="tel" name="Telefone" placeholder="TELEFONE" required class="texto formulario__item">
+              <input id="formulario__assunto" type="text" name="Assunto" placeholder="ASSUNTO" required class="texto formulario__item">
               <textarea 
+                id="formulario__mensagem"
                 type="message" 
                 name="Mensagem"
                 placeholder="MENSAGEM"

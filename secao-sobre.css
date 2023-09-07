@@ -40,11 +40,15 @@
     margin-bottom: 2.5vh;
 }
 
-.secao-sobre__foto {
+.secao-sobre__figura {
     width: 50%;
     align-self: flex-start;
     display: flex;
     margin-left: 5vw;
+}
+
+.secao-sobre__foto {
+    width: 100%;
 }
 
 .secao-sobre__botao {

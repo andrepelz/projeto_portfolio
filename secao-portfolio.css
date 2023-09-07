@@ -42,6 +42,10 @@
     padding-block: 1rem;
 }
 
+.secao-portfolio__foto {
+    width: 100%;
+}
+
 .secao-portfolio__botao {
     position: relative;
     box-sizing: border-box;

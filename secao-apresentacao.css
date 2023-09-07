@@ -13,9 +13,13 @@
     margin-inline: 10%;
 }
 
-.secao-apresentacao__foto {
+.secao-apresentacao__figura {
     height: 100%;
     align-self: center;
+}
+
+.secao-apresentacao__foto {
+    height: 100%;
 }
 
 .secao-apresentacao__cabecalho {

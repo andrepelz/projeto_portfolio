@@ -133,12 +133,14 @@ body {
     position: fixed;
 	right: 10%;
 	z-index: 1;
+	width: 4.3vh;
     height: 6vh;
     margin-top: 6vh;
     align-self: flex-end;
 	z-index: 10;
-	border-radius: 20px;
-	transition: ease-in-out 0.5s;
+	border-radius: 10px;
+	padding-inline: 1rem;
+	transition: all 0.5s ease-in-out;
 }
 
 .botao {

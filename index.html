@@ -5,10 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Ragnar Lothbrok</title>
+
     <script
       src="https://kit.fontawesome.com/e9e631b38e.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="secao-apresentacao.css" />
     <link rel="stylesheet" href="secao-sobre.css" />
@@ -18,8 +20,10 @@
     <link rel="stylesheet" href="secao-educacao.css" />
     <link rel="stylesheet" href="secao-contato.css" />
     <link rel="stylesheet" href="cabecalho.css" />
-    <script type="text/javascript" src="navbar.js"></script>
-    <script type="text/javascript" src="portfolio_carrosel.js"></script>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="navbar.js"></script>
+    <script type="module" src="portfolio_carrosel.js"></script>
   </head>
 
   <body>
@@ -80,7 +84,6 @@
               id="cabecalho__hamburguer"
               value="inactive"
               class="cabecalho__hamburguer fa-rotate-180"
-              onclick="navbarHamburguerOnClick()"
             >
               <i class="fa-solid fa-bars cabecalho__icone"></i>
             </button>
@@ -165,7 +168,6 @@
     </section>
 
     <section id="secao-portfolio" class="secao secao-portfolio">
-      <!-- <div id="secao-portfolio__wrapper" class="secao__wrapper"> -->
       <div id="secao-portfolio__wrapper" class="secao__wrapper secao-portfolio__wrapper">
         <header id="secao-portfolio__titulo" class="secao__titulo secao-portfolio__titulo">
           <h2>Portfólio</h2>
@@ -174,21 +176,21 @@
         <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
           <ul id="secao-portfolio__cabecalho" class="cabecalho secao-portfolio__cabecalho">
             <li>
-              <button id="cabecalho__sites" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(0)">
+              <button id="cabecalho__sites" class="cabecalho__botao">
                 <i class="fa-solid fa-code cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Sites</p>
               </button>
             </li>
 
             <li>
-              <button id="cabecalho__palette" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(1)">
+              <button id="cabecalho__palette" class="cabecalho__botao">
                 <i class="fa-solid fa-palette cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Designs</p>
               </button>
             </li>
 
             <li>
-              <button id="cabecalho__camera" class="cabecalho__botao" onclick="cabecalhoPortfolioOnClick(2)">
+              <button id="cabecalho__camera" class="cabecalho__botao">
                 <i class="fa-solid fa-camera cabecalho__icone"></i>
                 <p class="texto cabecalho__label">Fotos</p>
               </button>

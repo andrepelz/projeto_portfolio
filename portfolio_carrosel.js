@@ -1,9 +1,6 @@
-let cabecalhoPortfolioOnClick = function cabecalhoPortfolioOnClick(numPagina) {
-    let totalPaginas = document.getElementById("numPaginas").value;
-    let paginas = document.getElementsByClassName("secao-portfolio__pagina");
+export default function cabecalhoPortfolioOnClick(numPagina) {
+    const totalPaginas = document.getElementById("numPaginas").value;
+    const paginas = Array.from(document.getElementsByClassName("secao-portfolio__pagina"));
 
-    Array.prototype.forEach.call(
-        paginas,
-        (pagina) => pagina.style.left = `${-100/totalPaginas*numPagina}%`
-    )
+    paginas.forEach(pagina => pagina.style.left = `${-100/totalPaginas*numPagina}%`);
 }

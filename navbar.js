@@ -11,20 +11,26 @@ export function navbarHamburguerOnClick() {
 }
 
 export function initNavbar() {
-    const itensNavbar = Array.from(document.getElementsByClassName("navbar__item"));
-    itensNavbar.forEach((item, index) => {
-        item.style.left = ((itensNavbar.length - index - 1)*100 + 100) + "%";
-        item.style.visibility = "hidden";
-    });
-    
-    document.getElementsByClassName("cabecalho-navbar")[0].style.width = "0";
+    esconderNavbar();
+}
 
-    setTimeout(esconderItens, 400, itensNavbar);
+export function ocultarFundo() {
+    const scrollTop = (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    const navbar = document.getElementById("cabecalho-navbar");
+
+    console.log(scrollTop);
+    if(scrollTop > 0) {
+        navbar.style.backgroundColor = "#F5B63F80";
+        navbar.style.backdropFilter = "blur(2px)";
+    } else {
+        navbar.style.backgroundColor = "transparent";
+    }
 }
 
 let mostrarNavbar = function mostrarNavbar() {
-    document.getElementById("cabecalho__hamburguer").classList.remove("fa-rotate-180");
-    document.getElementById("cabecalho__hamburguer").classList.add("fa-rotate-90");
+    const hamburguer = document.getElementById("cabecalho__hamburguer");
+    hamburguer.classList.remove("fa-rotate-180");
+    hamburguer.classList.add("fa-rotate-90");
 
     const itensNavbar = Array.from(document.getElementsByClassName("navbar__item"));
 
@@ -37,12 +43,13 @@ let mostrarNavbar = function mostrarNavbar() {
         });
     }, 10);
 
-    document.getElementsByClassName("cabecalho-navbar")[0].style.width = "auto";
+    document.getElementById("cabecalho-navbar").style.width = "auto";
 }
 
 let esconderNavbar = function esconderNavbar() {
-    document.getElementById("cabecalho__hamburguer").classList.remove("fa-rotate-90");
-    document.getElementById("cabecalho__hamburguer").classList.add("fa-rotate-180");
+    const hamburguer = document.getElementById("cabecalho__hamburguer");
+    hamburguer.classList.remove("fa-rotate-90");
+    hamburguer.classList.add("fa-rotate-180");
 
     const itensNavbar = Array.from(document.getElementsByClassName("navbar__item"));
     itensNavbar.forEach((item, index) => {
@@ -50,7 +57,7 @@ let esconderNavbar = function esconderNavbar() {
         item.style.visibility = "hidden";
     });
     
-    document.getElementsByClassName("cabecalho-navbar")[0].style.width = "0";
+    document.getElementById("cabecalho-navbar").style.width = "0";
 
     setTimeout(esconderItens, 400, itensNavbar);
 }

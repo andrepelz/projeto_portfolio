@@ -1,4 +1,4 @@
-import { navbarHamburguerOnClick, initNavbar } from "./navbar.js";
+import { navbarHamburguerOnClick, initNavbar, ocultarFundo } from "./navbar.js";
 import cabecalhoPortfolioOnClick from "./portfolio_carrosel.js";
 import enviarFormulario from "./formulario.js";
 
@@ -24,3 +24,5 @@ const formulario = document.getElementById("secao-contato__formulario");
 formulario.addEventListener("submit", (e) => enviarFormulario(e));
 
 initNavbar();
+
+window.onscroll = (e) => ocultarFundo();

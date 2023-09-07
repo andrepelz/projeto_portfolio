@@ -13,7 +13,6 @@
     height: 80%;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: greenyellow; */
 }
 
 .secao-contato__informacao {
@@ -166,4 +165,20 @@
     padding: 1rem;
     border-radius: 15px;
     filter: drop-shadow(0.3rem 0.3rem 1rem rgba(245, 182, 63, 0.4));
+    visibility: hidden;
+}
+
+.formulario__toast--show {
+    visibility: visible;
+    animation: fade-in 0.5s, fade-out 0.5s 3.5s;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }

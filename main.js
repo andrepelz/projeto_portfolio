@@ -1,4 +1,4 @@
-import navbarHamburguerOnClick from "./navbar.js";
+import { navbarHamburguerOnClick, initNavbar } from "./navbar.js";
 import cabecalhoPortfolioOnClick from "./portfolio_carrosel.js";
 import enviarFormulario from "./formulario.js";
 
@@ -22,3 +22,5 @@ cabecalhoCamera.addEventListener("click", function() {
 
 const formulario = document.getElementById("secao-contato__formulario");
 formulario.addEventListener("submit", (e) => enviarFormulario(e));
+
+initNavbar();

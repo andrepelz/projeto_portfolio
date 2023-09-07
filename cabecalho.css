@@ -28,7 +28,7 @@
 }
 
 .cabecalho__hamburguer {
-    margin-left: 6vh;
+    /* margin-left: 6vh; */
     font-size: clamp(2rem, 3rem, 3vw);
     background-color: transparent;
     cursor: pointer;
@@ -64,4 +64,9 @@
     position: relative;
     visibility: hidden;
     transition: 0.4s;
+}
+
+.navbar__espacador {
+    width: 6vh;
+    min-width: 6vh;
 }

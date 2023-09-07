@@ -17,11 +17,17 @@ export default function enviarFormulario(e) {
 
     const botao = document.getElementById("formulario__botao");
 
-    console.log(botao.classList);
-
     botao.disabled = true;
     botao.classList.remove("formulario__botao--enabled");
     botao.classList.add("formulario__botao--disabled");
 
-    console.log(botao.classList);
+    exibirToast();
+}
+
+let exibirToast = function exibirToast() {
+    const toast = document.getElementById("formulario__toast");
+
+    toast.classList.add("formulario__toast--show");
+
+    setTimeout(() => toast.classList.remove("formulario__toast--show"), 3500);
 }

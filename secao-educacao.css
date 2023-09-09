@@ -83,3 +83,12 @@
     transition: 0.2s;
 }
 
+@media (max-width: 1300px) and (orientation: portrait) {
+    .secao-educacao__conteudo {
+        flex-direction: column;
+    }
+
+    .secao-educacao__lista {
+        width: 100%;
+    }
+}

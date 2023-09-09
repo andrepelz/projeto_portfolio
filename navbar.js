@@ -43,7 +43,6 @@ let mostrarNavbar = function mostrarNavbar() {
         });
     }, 10);
 
-    document.getElementById("cabecalho-navbar").style.width = "auto";
 }
 
 let esconderNavbar = function esconderNavbar() {
@@ -57,8 +56,6 @@ let esconderNavbar = function esconderNavbar() {
         item.style.visibility = "hidden";
     });
     
-    document.getElementById("cabecalho-navbar").style.width = "auto";
-
     setTimeout(esconderItens, 400, itensNavbar);
 }
 

@@ -77,7 +77,7 @@
     min-width: 6vh;
 }
 
-@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+@media (max-width: 1300px) and (orientation: portrait) {
     .cabecalho__botao {
         height: 8vw;
         min-width: 8vw;

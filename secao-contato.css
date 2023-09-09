@@ -120,6 +120,7 @@
     height: 12rem;
     resize: none;
 }
+
 .formulario__botao {
     padding-block: 1rem;
     padding-inline: 2rem;
@@ -171,4 +172,45 @@
 @keyframes fade-out {
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+@media (max-width: 1300px) and (orientation: portrait) {
+    .secao-contato__conteudo {
+        flex-direction: column;
+    }
+
+    .secao-contato__informacao {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contato__icone {
+        font-size: clamp(2rem, 4rem, 4vw);
+        width: clamp(1.5rem, 6rem, 6vh);
+        height: clamp(1.5rem, 6rem, 6vh);
+    }
+
+    .contato__texto {
+        font-size: clamp(1.2rem, 2rem, 2vh);
+    }
+
+    .secao-contato__lista-redes-sociais {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .secao-contato__rede-social {
+        font-size: clamp(2rem, 4rem, 4vw);
+        width: clamp(1.5rem, 6rem, 6vh);
+        height: clamp(1.5rem, 6rem, 6vh);
+    }
+
+    .secao-contato__formulario {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .formulario__botao {
+        margin-top: 1.5rem;
+    }
 }

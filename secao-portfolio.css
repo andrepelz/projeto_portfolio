@@ -1,7 +1,6 @@
 .secao-portfolio {
     display: flex;
     flex-direction: column;
-
 }
 
 .secao-portfolio__wrapper {
@@ -42,8 +41,32 @@
     padding-block: 1rem;
 }
 
+.secao-portfolio__overlay {
+    background-color: #F5B63F80;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px); 
+}
+
+.overlay__icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    color: #F5B63F;
+    background-color: #2B2A2A;
+    border-radius: 15px;
+    font-size: clamp(2rem, 3.2rem, 3.2vw);
+    padding: 1rem;
+}
+
 .secao-portfolio__foto {
+    position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 .secao-portfolio__botao {
@@ -66,7 +89,7 @@
     transition: 0.2s;
 }
 
-@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+@media (max-width: 1300px) and (orientation: portrait){
     .secao-portfolio__pagina {
         width: 90vw;
     }

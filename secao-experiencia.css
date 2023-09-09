@@ -115,7 +115,7 @@
     text-align: center;
 }
 
-@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+@media (max-width: 1300px) and (orientation: portrait) {
     .secao-experiencia__descricao {
         flex-direction: column;
         justify-content: space-between;

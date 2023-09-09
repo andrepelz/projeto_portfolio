@@ -140,8 +140,8 @@
 
     <section id="secao-sobre" class="secao secao-sobre">
       <div id="secao-sobre__wrapper" class="secao__wrapper secao-sobre__wrapper">
-        <header id="secao-sobre__titulo" class="secao__titulo secao-sobre__titulo">
-          <h2>Sobre</h2>
+        <header class="secao__header">
+          <h2 id="secao-sobre__titulo" class="secao__titulo secao-sobre__titulo">Sobre</h2>
         </header>
         
         <div id="secao-sobre__conteudo" class="secao__conteudo secao-sobre__conteudo">
@@ -184,11 +184,9 @@
 
     <section id="secao-portfolio" class="secao secao-portfolio">
       <div id="secao-portfolio__wrapper" class="secao__wrapper secao-portfolio__wrapper">
-        <header id="secao-portfolio__titulo" class="secao__titulo secao-portfolio__titulo">
-          <h2>Portfólio</h2>
-        </header>
+        <header class="secao__header">
+          <h2 id="secao-portfolio__titulo" class="secao__titulo secao-portfolio__titulo">Portfólio</h2>
 
-        <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
           <ul id="secao-portfolio__cabecalho" class="cabecalho secao-portfolio__cabecalho">
             <li>
               <button id="cabecalho__sites" class="cabecalho__botao">
@@ -211,6 +209,10 @@
               </button>
             </li>
           </ul>
+        </header>
+
+        <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
+          
 
           <ul id="secao-portfolio__paginas" class="secao-portfolio__paginas">
             <param id="numPaginas" name="porfolio-paginas__num-paginas" value=3 />
@@ -399,8 +401,8 @@
 
     <section id="secao-skills" class="secao secao-skills">
       <div id="secao-skills__wrapper" class="secao__wrapper secao-skills__wrappper">
-        <header id="secao-skills__titulo" class="secao__titulo secao-skills__titulo">
-          <h2>Skills</h2>
+        <header class="secao__header">
+          <h2 id="secao-skills__titulo" class="secao__titulo secao-skills__titulo">Skills</h2>
         </header>
 
         <div id="secao-skills__conteudo" class="secao__conteudo secao-skills__conteudo">
@@ -673,8 +675,8 @@
 
     <section id="secao-experiencia" class="secao secao-experiencia">
       <div id="secao-experiencia__wrapper" class="secao__wrapper secao-experiencia__wrappper">
-        <header id="secao-experiencia__titulo" class="secao__titulo secao-experiencia__titulo">
-          <h2>Experiência</h2>
+        <header class="secao__header">
+          <h2 id="secao-experiencia__titulo" class="secao__titulo secao-experiencia__titulo">Experiência</h2>
         </header>
 
         <div id="secao-experiencia__conteudo" class="secao__conteudo secao-experiencia__conteudo">
@@ -751,8 +753,8 @@
 
     <section id="secao-educacao" class="secao secao-educacao">
       <div id="secao-educacao__wrapper" class="secao__wrapper secao-educacao__wrapper">
-        <header id="secao-educacao__titulo" class="secao__titulo secao-educacao__titulo">
-          <h2>Educação</h2>
+        <header class="secao__header">
+          <h2 id="secao-educacao__titulo" class="secao__titulo secao-educacao__titulo">Educação</h2>
         </header>
 
         <div class="secao__conteudo secao-educacao__conteudo">
@@ -864,8 +866,8 @@
 
     <section id="secao-contato" class="secao secao-contato">
       <div id="secao-contato__wrapper" class="secao__wrapper secao-contato__wrapper">
-        <header id="secao-contato__titulo" class="secao__titulo secao-contato__titulo">
-          <h2>Contato</h2>
+        <header class="secao__header">
+          <h2 id="secao-contato__titulo" class="secao__titulo secao-contato__titulo">Contato</h2>
         </header>
 
         <div class="secao__conteudo secao-contato__conteudo">
@@ -944,18 +946,12 @@
               </a>
             </ul>
           </address>
-
-          <!-- action="https://formsubmit.co/andre.valim@edu.univali.br" -->
-          <!-- method="POST" -->
           
           <form
             id="secao-contato__formulario"
             class="secao-contato__formulario"
           >
             <div class="formulario__lista-itens">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="">
-
               <input id="formulario__nome" type="text" name="Nome" placeholder="NOME" required class="texto formulario__item">
               <input id="formulario__email" type="email" name="Email" placeholder="EMAIL" required class="texto formulario__item">
               <input id="formulario__telefone" type="tel" name="Telefone" placeholder="TELEFONE" required class="texto formulario__item">
@@ -970,7 +966,7 @@
               ></textarea>
             </div>
 
-            <button id="formulario__botao" type="submit" class="botao texto formulario__botao--enabled">Enviar</button>
+            <button id="formulario__botao" type="submit" class="botao texto formulario__botao formulario__botao--enabled">Enviar</button>
           </form>
 
           <div id="formulario__toast" class="texto formulario__toast">

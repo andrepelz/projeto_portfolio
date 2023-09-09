@@ -9,7 +9,6 @@
 }
 
 .secao-educacao__conteudo {
-    height: 80%;
     flex-direction: row;
 }
 
@@ -64,6 +63,7 @@
 
 .secao-educacao__botao {
     box-sizing: border-box;
+    margin-top: 3rem;
     padding-inline: 4.5rem;
     padding-block: 0.9rem;
     border-radius: 15px;

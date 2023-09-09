@@ -10,7 +10,6 @@
 }
 
 .secao-contato__conteudo {
-    height: 80%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -121,11 +120,10 @@
     height: 12rem;
     resize: none;
 }
-
-.formulario__botao--enabled {
+.formulario__botao {
     padding-block: 1rem;
     padding-inline: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 3rem;
     border-radius: 15px;
     font-size: clamp(1rem, 1.5rem, 1.5vw);
     text-align: center;
@@ -141,14 +139,6 @@
 }
 
 .formulario__botao--disabled {
-    padding-block: 1rem;
-    padding-inline: 2rem;
-    margin-top: 0.5rem;
-    border-radius: 15px;
-    font-size: clamp(1rem, 1.5rem, 1.5vw);
-    text-align: center;
-    text-transform: uppercase;
-    align-self: flex-end;
     background-color: #CDCDCD;
 }
 

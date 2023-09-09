@@ -71,25 +71,39 @@ a {
 
 body {
 	background-color: #111111;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 .secao {
     position: relative;
 	display:flex;
-    height: 100vh;
+    width: 100%;
+	min-height: 100vh;
     background-color: #111111;
 }
 
 .secao__wrapper {
     position: relative;
-	top: 15%;
+	margin-block: 15vh;
 	left: 10%;
 	width: 80%;
 	height: 80%;
 }
 
+.secao__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: fit-content;
+	margin-bottom: 3rem;
+}
+
 .secao__titulo {
 	box-sizing: border-box;
+	display: flex;
     width:fit-content;
 	border-left: 0.1em solid #F5B63F;
 	padding-left: 0.3em;

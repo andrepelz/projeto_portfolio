@@ -140,14 +140,13 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-	gap: 0.4rem;
 }
 
 .cabecalho-navbar {
     position: fixed;
+	top: 0%;
 	right: 10%;
-	z-index: 1;
-	width: 4.3vh;
+	width: auto;
     height: 6vh;
     margin-top: 6vh;
     align-self: flex-end;
@@ -186,4 +185,29 @@ body {
     color: white;
     text-align: justify;
     line-height: 1.2;
+}
+
+@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+	.secao {
+		min-height: 100vw;
+	}
+
+	.secao__wrapper {
+		margin-block: 15vw;
+		left: 5%;
+		width: 90%;
+	}
+
+	.secao__titulo {
+		font-size: clamp(3rem, 3rem, 4vw);
+	}
+
+    .cabecalho-navbar {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: auto;
+        height: auto;
+		padding-inline: 0;
+		padding-block: 0.2rem;
+    }
 }

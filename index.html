@@ -38,8 +38,8 @@
 
   <body>
     <header>
-      <nav>
-        <ul id="cabecalho-navbar" class="cabecalho cabecalho-navbar">
+      <nav id="cabecalho-navbar" class="cabecalho cabecalho-navbar">
+        <ul class="navbar__itens">
           <li>
             <a href="#secao-apresentacao" class="cabecalho__botao navbar__item">
               <i class="fa-solid fa-house cabecalho__icone"></i>
@@ -88,19 +88,17 @@
               <label class="texto cabecalho__label">Contato</label>
             </a>
           </li>
-
-          <span class="navbar__espacador navbar__item"></span>
-
-          <li>
-            <button 
-              id="cabecalho__hamburguer"
-              value="inactive"
-              class="cabecalho__hamburguer fa-rotate-180"
-            >
-              <i class="fa-solid fa-bars cabecalho__icone"></i>
-            </button>
-          </li>
         </ul>
+
+        <span class="navbar__espacador navbar__item"></span>
+
+        <button 
+          id="cabecalho__hamburguer"
+          value="inactive"
+          class="cabecalho__hamburguer fa-rotate-180"
+        >
+          <i class="fa-solid fa-bars cabecalho__icone"></i>
+        </button>
       </nav>
     </header>
 
@@ -184,7 +182,7 @@
 
     <section id="secao-portfolio" class="secao secao-portfolio">
       <div id="secao-portfolio__wrapper" class="secao__wrapper secao-portfolio__wrapper">
-        <header class="secao__header">
+        <header class="secao__header secao-portfolio__header">
           <h2 id="secao-portfolio__titulo" class="secao__titulo secao-portfolio__titulo">Portfólio</h2>
 
           <ul id="secao-portfolio__cabecalho" class="cabecalho secao-portfolio__cabecalho">
@@ -212,8 +210,6 @@
         </header>
 
         <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
-          
-
           <ul id="secao-portfolio__paginas" class="secao-portfolio__paginas">
             <param id="numPaginas" name="porfolio-paginas__num-paginas" value=3 />
 

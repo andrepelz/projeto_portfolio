@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 
 .secao-apresentacao__conteudo {
@@ -14,22 +15,12 @@
 }
 
 .secao-apresentacao__figura {
-    height: 100%;
+    width: 100%;
     align-self: center;
 }
 
 .secao-apresentacao__foto {
-    height: 100%;
-}
-
-.secao-apresentacao__cabecalho {
-    position: sticky;
-    top: 6vh;
-    width: 50vw;
-    height: 6vh;
-    margin-top: 8vh;
-    margin-bottom: 25vh;
-    align-self: flex-end;
+    width: 100%;
 }
 
 .secao-apresentacao__ola {
@@ -39,7 +30,7 @@
 }
 
 .secao-apresentacao__titulo {
-	font-size: clamp(1.4rem, 3.8rem, 3.8vw);
+	font-size: clamp(1.4rem, 3.6rem, 3.6vw);
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -70,4 +61,34 @@
     color: whitesmoke;
     font-size: 1.2em;
     transition: 0.2s;
+}
+
+@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+    .secao-apresentacao {
+        flex-direction: column;
+    }
+
+    .secao-apresentacao__conteudo {
+        position: absolute;
+        background-color: #2B2A2A80;
+        backdrop-filter: blur(10px); 
+        height: auto;
+        padding: 3vh;
+        border-radius: 30px;
+    }
+
+    .secao-apresentacao__ola {
+        font-size: clamp(1.4rem, 2rem, 2vw);
+        font-weight:400;
+        text-transform: uppercase;
+    }
+    
+    .secao-apresentacao__titulo {
+        font-size: clamp(3rem, 3.6rem, 3.6vw);
+    }
+    
+    .secao-apresentacao__paragrafo {
+        font-size: clamp(1rem, 1.5rem, 1.5vw);
+        font-weight: 400;
+    }
 }

@@ -28,11 +28,11 @@
 }
 
 .cabecalho__hamburguer {
-    /* margin-left: 6vh; */
-    font-size: clamp(2rem, 3rem, 3vw);
+    font-size: clamp(1rem, 3rem, 3vw);
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s;
+    /* display: none; */
 }
 
 .cabecalho__hamburguer:hover {
@@ -60,13 +60,62 @@
     transition: 0.4s;
 }
 
+.navbar__itens {
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar__item {
     position: relative;
     visibility: hidden;
+    margin-right: 0.4rem;
     transition: 0.4s;
 }
 
 .navbar__espacador {
     width: 6vh;
     min-width: 6vh;
+}
+
+@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+    .cabecalho__botao {
+        height: 8vw;
+        min-width: 8vw;
+        align-self: flex-end;
+        margin-right: 0;
+        margin-top: 0.4rem;
+        font-size: clamp(1.6rem, 1.6rem, 1.6vw);
+    }
+
+    .cabecalho__hamburguer {
+        font-size: clamp(2rem, 3rem, 3vw);
+        height: 8vw;
+        min-width: 8vw;
+    }
+
+    .navbar__itens {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar__item {
+        height: 8vw;
+        min-width: 8vw;
+        align-self: flex-end;
+        margin-right: 0;
+        margin-top: 0.4rem;
+        font-size: clamp(1.6rem, 1.6rem, 1.6vw);
+    }
+
+    .navbar__espacador {
+        display: none;
+        width: 0;
+        height: 2vw;
+        min-width: 0;
+    }
+
+    .navbar__item:hover > .cabecalho__label {
+        font-size: clamp(1.6rem, 1.6rem, 1.6vw);
+    }
 }

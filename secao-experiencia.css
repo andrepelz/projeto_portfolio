@@ -87,7 +87,6 @@
     position: relative;
     top: 10%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     width: 70%;
     height: 80%;
     gap: 2rem;
@@ -114,4 +113,25 @@
 .grid-item__texto {
     text-transform: uppercase;
     text-align: center;
+}
+
+@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+    .secao-experiencia__descricao {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .secao-experiencia__grid-wrapper {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .secao-experiencia__grid {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .secao-experiencia__grid-item {
+        padding: 2rem;
+    }
 }

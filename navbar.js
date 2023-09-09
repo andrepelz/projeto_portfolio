@@ -57,7 +57,7 @@ let esconderNavbar = function esconderNavbar() {
         item.style.visibility = "hidden";
     });
     
-    document.getElementById("cabecalho-navbar").style.width = "4.3vh";
+    document.getElementById("cabecalho-navbar").style.width = "auto";
 
     setTimeout(esconderItens, 400, itensNavbar);
 }

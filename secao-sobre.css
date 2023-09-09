@@ -68,3 +68,13 @@
     color: whitesmoke;
     transition: 0.2s;
 }
+
+@media (max-width: 1300px) and (max-aspect-ratio: 1/1) {
+    .secao-sobre__figura {
+        display: none;
+    }
+
+    .secao-sobre__foto {
+        display: none;
+    }
+}
